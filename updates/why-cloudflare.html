@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+        <meta charset="UTF-8">
+        <head>
+                <link rel="stylesheet" href="../mystyle.css">
+                <title>Why I use Cloudflare | Benjamin's Webpage</title>
+                <link rel="icon" type="image/x-icon" href="../Pudds.ico">
+        </head>
+
+        <body>
+                <main>
+                        <a href="https://benjaminalva.com/">
+                                <header>
+                                        <h1 style="font-size: 220%">&#9729; Why I use Cloudflare &#9729;</h1>
+                                </header>
+                        </a>
+                        <article>
+				<figure class="titleImage">
+					<img src="../pics/Cloudflare_Logo.png" title="Cloudflare">
+					<figcaption>Cloudflare's Logo</figcaption>
+				</figure>
+				<p>After much deliberation on the best CDN to secure my website from Threat Actors and Crawlers, I have decided to go with Cloudflare.</p>
+                               
+				<h2> What is Cloudflare? </h2>
+				<p>Cloudflare is a company which provides security and performance services to websites like my own, albeit through proprietary means. The services that I use from Cloudflare is WAF, DNS, and their SSL Encryption.</p>
+                                <h3>The Elephant in the room</h3>
+				<p>Cloudflare's problems are not recondite. In 2017, the <em>'Cloudbleed'</em> bug led to a massive data leak of passwords and auth tokens. Cloudbleed was caused by a memory leak in Cloudflare's HTML parser. Every time Cloudflare's servers were fed malformed inputs, a memory overflow would trigger. This memory overflow caused sensitive data to be included in the cached content. Several outages have occured, see <a class= "yellowHover" href="https://www.cloudflarestatus.com/history">Cloudflare Incident History</a>. Cloudflare also has a notorious track record of providing services to many Alt-Right websites like <em>The Daily Stormer</em> and <em>Kiwi Farms</em> despite the fact that Cloudflare is seen as a government backdoor in those circles.</p>
+				<img src="../pics/cloudflare_soyjak.png" style="width:200px; height:200px;">
+
+				<h2>Why do I need protection for my webpage?</h2>
+				<p>I hold "sensitive" data on my webpage that I wouldn't like for strangers outside of my life to have for the simple reason of privacy.</p>
+				<h3>Threat Actors</h3>
+				<p>While much of the marketing for companies like Cloudflare are over the top fearmongering to get you to buy into their service, it is not completely dishonest. With a web crawler using a scraper like <em>Beautifulsoup</em>, a threat actor can find webpages like mine and access personal details like my contact info and my name as well as probing for any vulnerabilities I may have created.<a href="https://www.imperva.com/resources/resource-library/reports/2024-bad-bot-report/" class="yellowHover" > According to Imperva</a>, bots account for half of all internet traffic. Bots that probe for information take up a third of all internet traffic!</p>
+				<h3>Services I use to protect users and my webpage from threat actors</h3>
+				<dl>
+					<dt>WAF
+					<dd>Cloudflare's Web Application Firewall protects websites by blocking and filtering possible vulnerabilities. The WAF also includes custom rulesets that you can add, such as region blocking. For instance, I noticed that 75% of the bot traffic reaching my website were from outside of the US. So, I added a ruleset that blocked any requests coming from outside of the US as I have no need for anyone outside the US to see my content. 
+					<dt>DNS
+					<dd>Cloudflare's DNS is known for it's speed, but it's security and reliability cannot be trumped. Cloudflare's name servers are great for DDos protection and they come with Rate Limiting for possible threats probing for vulnerabilities. Another great plus is the CDN integration, which caches content for returning users, making load times much more efficient.
+					<dt>SSL</dt>
+					<dd>My SSL certificate is located on the left of the search bar displayed by a lock icon. An SSL certificate is a file that encrypts data that is sent to the server. Note: earning a certification for free is easy using Certbot, Cloudflare just makes it more convenient.
+				</dl>
+				<h2>Why Cloudflare specifically?</h2>
+				<p>The reason I chose to use Cloudflare is because of how much value it offers. One of the best CDN and Firewall providers for the money, which is <span style= "color:rgb(160,255,210); font-size:120%;">NOTHING!</span> That's right. It's totally free.
+				<h3>Is it truly free?</h3>
+				<p><em>"If the service is free, you are the product".</em> This is true with <em>every</em> proprietary service including Cloudflare. However, Cloudflare uses you as a product by providing a free service in hopes it spreads word of mouth. In other words, they provide a free service intended to cast a wide net in hopes a small website owner markets Cloudflare at the enterprise they work for.</p>
+				<p>Of course Cloudflare also provides paid services for enterprises to use which is where their money is made, they provide services for companies like Discord and Udemy
+				<h3>What about Cloudflare or the Government having your data?</h3>
+				<p>Cloudflare states that they comply with privacy law and <a href="https://www.cloudflare.com/trust-hub/us-privacy-compliance/" class="yellowHover"> do NOT sell data</a>. Take of that what you will; I will trust them as they have not had any prior infractions reguarding privacy and data. The argument of the Government compromising Cloudflare is asinine. While I believe the government can and would subpoena Cloudflare, all of the information I intend to share on this website, the government could obtain without needing this webpage. Information that I intend to keep to myself will simply not be shared.
+
+
+		</article>
+
+                </main>
+                <footer>
+                        <a href="https://benjaminalva.com/">
+                                <p id="linkParagraph"; style="font-size:100%;">https://benjaminalva.com/</p>
+                        </a>
+                        <br>
+                        <p id="dateParagraph">Page last updated</p>
+                        <p id="dateParagraph">1/12/2025</p>
+                </footer>
+        </body>
+
+</html>
+
+
