@@ -81,6 +81,9 @@ footer {
 	margin-top:60px;
 	text-align:center;
 	}
+span.code {
+	color: #0d0;
+	}
 
 /* Set page links to turn yellow on hover and not change purple once link is clicked*/
 
